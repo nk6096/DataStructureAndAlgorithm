@@ -18,7 +18,7 @@ public static int subArrayExceedsSum(int arr[], int target) {
 
 public class SubArrayExceedSum {
     public static void main(String[] args) {
-        System.out.println(subArrayExceedsSum(new int[]{1, 2, 3, 4, 2}, 6));
+        System.out.println(subArrayExceedsSum(new int[]{1, 2, 3, 4}, 6));
     }
 
     public static int subArrayExceedsSum(int[] arr, int target) {
@@ -31,7 +31,7 @@ public class SubArrayExceedSum {
                 curr_sum += arr[right++];
             }
             while (curr_sum >= target && left < n) {
-                if (curr_sum == target) {
+                if (curr_sum >= target) {
                     if (min_length > right - left) {
                         min_length = right - left;
                     }
