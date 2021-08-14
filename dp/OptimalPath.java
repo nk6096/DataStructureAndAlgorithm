@@ -41,11 +41,6 @@ public class OptimalPath {
     public static Integer optimalPath(Integer[][] grid) {
         int n = grid.length, m = grid[0].length;
         final int[][] dp = new int[n][m];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                dp[i][j] = 0;
-            }
-        }
         return getPath(dp, grid, n - 1, 0, n, m);
     }
 

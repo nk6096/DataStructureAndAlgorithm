@@ -61,9 +61,7 @@ public class BestAverageGrade {
         for (String[] score : scores) {
             final var studentName = score[0];
             gradeMap.putIfAbsent(studentName, new ArrayList<>());
-            final ArrayList<Integer> studentScore = gradeMap.get(studentName);
-            studentScore.add(Integer.parseInt(score[1]));
-            gradeMap.put(studentName, studentScore);
+            gradeMap.get(studentName).add(Integer.parseInt(score[1]));
         }
 
         int bestGrade = 0;

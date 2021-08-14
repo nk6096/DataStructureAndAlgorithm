@@ -44,5 +44,16 @@ public class CountLengthOfCycle {
             }
         }
         return count;
+
+        //==================================================
+        /*int index = startIndex, count = 0;
+
+        int cycleCounter[] = new int[arr.length];
+
+        while(cycleCounter[index] == 0){
+            cycleCounter[index] = ++count;
+            index = arr[index];
+        }
+        return count - cycleCounter[index];*/
     }
 }
