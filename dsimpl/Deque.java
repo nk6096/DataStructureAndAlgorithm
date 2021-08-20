@@ -1,4 +1,4 @@
-package com.example.demo.gs.dsimpl;
+package com.example.demo.prc.dsimpl;
 /*Problem Statement:
         Implement a double-ended queue (abbreviated to deque) that stores strings.
         A deque is a data structure that has characteristics of both a queue and a stack.

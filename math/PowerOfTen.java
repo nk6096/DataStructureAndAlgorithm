@@ -1,4 +1,4 @@
-package com.example.demo.gs.math;
+package com.example.demo.prc.math;
 /*
 Problem Statement-
         Returns true if x is a power-of-10. Otherwise returns false.

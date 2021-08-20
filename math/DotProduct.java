@@ -1,4 +1,4 @@
-package com.example.demo.gs.math;
+package com.example.demo.prc.math;
 /*
 Problem Statement-
         Given two arrays of integers, returns the dot product of the arrays.

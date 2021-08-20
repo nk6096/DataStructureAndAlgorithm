@@ -1,4 +1,4 @@
-package com.example.demo.gs.string;
+package com.example.demo.prc.string;
 /*
 Problem Statement –
         Given two words returns the shortest distance between their two midpoints in number of characters,

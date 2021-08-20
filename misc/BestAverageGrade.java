@@ -1,4 +1,4 @@
-package com.example.demo.gs.misc;
+package com.example.demo.prc.misc;
 /*Problem Statement:
         Given a list of student test scores, find the best average grade.
         Each student may have more than one test score in the list.

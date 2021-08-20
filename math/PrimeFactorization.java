@@ -1,4 +1,4 @@
-package com.example.demo.gs.math;
+package com.example.demo.prc.math;
 /*
 Problem Statement:
         Return an array containing prime numbers whose product is x

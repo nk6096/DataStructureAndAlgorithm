@@ -1,4 +1,4 @@
-package com.example.demo.gs.misc;
+package com.example.demo.prc.misc;
 
 /*Problem Statement:
         Pascals Triangle exhibits the following behaviour:

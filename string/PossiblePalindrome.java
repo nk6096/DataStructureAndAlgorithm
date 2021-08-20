@@ -1,4 +1,4 @@
-package com.example.demo.gs.string;
+package com.example.demo.prc.string;
 
 public class PossiblePalindrome {
     public static void main(String[] args) {

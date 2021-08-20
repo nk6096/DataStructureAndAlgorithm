@@ -1,4 +1,4 @@
-package com.example.demo.gs.misc;
+package com.example.demo.prc.misc;
 /*Problem Statement:
         You are given an integer array of size N.
         Every element of the array is greater than or equal to 0.
@@ -18,7 +18,7 @@ package com.example.demo.gs.misc;
         Input :
         arr: [1,2,0]
         startIndex: 0
-        Output :2
+        Output :3
 
         Input :
         arr: [1, 3, 0, 4, 1]
@@ -46,7 +46,7 @@ public class CountLengthOfCycle {
         return count;
 
         //==================================================
-        /*int index = startIndex, count = 0;
+        /*int index = startIndex, count = 1;
 
         int cycleCounter[] = new int[arr.length];
 

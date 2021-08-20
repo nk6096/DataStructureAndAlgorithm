@@ -1,4 +1,4 @@
-package com.example.demo.gs.numbers;
+package com.example.demo.prc.numbers;
 /*Problem Statement-
         Returns the smallest number in array that has been rotated
         For example - Array {3,4,5,6,1,2} returns 1

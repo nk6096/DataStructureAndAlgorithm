@@ -1,4 +1,4 @@
-package com.example.demo.gs.string;
+package com.example.demo.prc.string;
 /*Problem Statement:
         Given a list of words, group them by anagrams
         Input: List of "cat", "dog", "god"
@@ -21,21 +21,16 @@ public class GroupAnagram {
 
     static Set<Set<String>> group(List<String> words){
         Set<Set<String>> ans = new HashSet<>();
-        List<String> newWords = words.stream()
-                .map(String::toCharArray)
-                .map(chars -> {Arrays.sort(chars); return new String(chars);})
-                .collect(Collectors.toList());
-
-        Map<String, ArrayList<Integer>> map = new HashMap<>();
-        for (int i = 0; i < newWords.size(); i++) {
-            map.putIfAbsent(newWords.get(i), new ArrayList<>());// act - 0, gdo - 1,2
-            map.get(newWords.get(i)).add(i);
+        Map<String, HashSet<String>> map = new HashMap<>();
+        for (String word : words) {
+            char[] charArr = word.toCharArray();
+            Arrays.sort(charArr);
+            map.putIfAbsent(new String(charArr), new HashSet<>());// act - 0, gdo - 1,2
+            map.get(new String(charArr)).add(word);
         }
-
-        for (String key : map.keySet()) {
-            ans.add(map.get(key).stream().map(words::get).collect(Collectors.toSet()));
+        for (Map.Entry<String, HashSet<String>> key : map.entrySet()) {
+            ans.add(key.getValue());
         }// car, [dog,god]
-
         return ans;
     }
 }

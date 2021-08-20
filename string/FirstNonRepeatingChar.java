@@ -1,4 +1,4 @@
-package com.example.demo.gs.string;
+package com.example.demo.prc.string;
 /*Problem Statement –
         Finds the first character that does not repeat anywhere in the input string
         If all characters are repeated, return 0
@@ -22,17 +22,23 @@ public class FirstNonRepeatingChar {
     }
 
     static char findFirst(String input){
-        int[] arr = new int[256];
+        int[] arr = new int[26];
         for(int i = 0; i < input.length(); i++) {
-            arr[input.charAt(i)]++;
+            arr[input.charAt(i)%97]++;
         }
 
+        int k = 1;
+        char ans = '0';
         for(int i = 0; i < input.length(); i++) {
-           if (arr[input.charAt(i)] == 1) {
-               return input.charAt(i);
+           if (arr[input.charAt(i)%97] == 1 && k <= 3) {
+               if (k == 3) {
+                   ans = input.charAt(i);
+                   break;
+               }
+               k++;
            }
         }
         // TC : O(n)
-        return '0';
+        return ans;
     }
 }

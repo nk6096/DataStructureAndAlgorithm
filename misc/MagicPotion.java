@@ -1,4 +1,4 @@
-package com.example.demo.gs.misc;
+package com.example.demo.prc.misc;
 /*Problem Statement:
         Hermione is preparing a cheat-sheet for her final exam in Potions class.
         To create a potion, one must combine ingredients in a specific order, any of which may be repeated.

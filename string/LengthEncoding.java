@@ -1,4 +1,4 @@
-package com.example.demo.gs.string;
+package com.example.demo.prc.string;
 /*Problem Statement-
         For a string input the function returns output encoded as follows:
 

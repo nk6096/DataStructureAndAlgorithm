@@ -1,4 +1,4 @@
-package com.example.demo.gs.misc;
+package com.example.demo.prc.misc;
 /*Problem Statement:
         Given a string and size of the tuples, extracts all unique tuples(substrings) of the given size.
 

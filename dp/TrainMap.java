@@ -1,4 +1,4 @@
-package com.example.demo.gs.dp;
+package com.example.demo.prc.dp;
 /*
 Problem Statement:
         shortestPath(self, fromStationName, toStationName)
@@ -117,9 +117,9 @@ class TrainMap {
     }
 
     public List<Station> shortestPath(String from, String to) {
-        Queue<String> bfs = new LinkedList<String>();
-        HashMap<String, String> parent = new HashMap<String, String>();
-        Set<String> visited = new HashSet<String>();
+        Queue<String> bfs = new LinkedList<>();
+        HashMap<String, String> parent = new HashMap<>();
+        Set<String> visited = new HashSet<>();
 
         bfs.add(from);
         visited.add(from);
@@ -139,7 +139,7 @@ class TrainMap {
             }
         }
 
-        List<String> result = new ArrayList<String>();
+        List<String> result = new ArrayList<>();
 
         String toStation = to;
 

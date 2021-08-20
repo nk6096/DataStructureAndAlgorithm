@@ -1,4 +1,4 @@
-package com.example.demo.gs.string;
+package com.example.demo.prc.string;
 /*Problem Statement-
         The sentence “The quick brown fox jumps over the lazy dog" contains
         every single letter in the alphabet. Such sentences are called pangrams.
@@ -30,11 +30,9 @@ public class Pangrams {
             arr[sentence.charAt(i)]++;
         }
 
-        for (int i = 65; i <= 97; i++) {
-            if ((i >= 65 && i <= 90) || (i >= 97 && i <= 122)) {
-                if (arr[i] == 0 && arr[i + 32] == 0) {
-                    ans.append((char) (i + 32));
-                }
+        for (int i = 65; i <= 90; i++) {
+            if (arr[i] == 0 && arr[i + 32] == 0) {
+                ans.append((char) (i + 32));
             }
         }
 

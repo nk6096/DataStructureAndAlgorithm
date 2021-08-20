@@ -1,4 +1,4 @@
-package com.example.demo.gs.misc;
+package com.example.demo.prc.misc;
 /*Problem Statement:
         Given an array of non-negative integers representing the elevations
         from the vertical cross-section of a range of hills, determine how

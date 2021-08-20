@@ -1,4 +1,4 @@
-package com.example.demo.gs.tree;
+package com.example.demo.prc.tree;
 /*Problem statement:
         Given a forest ( one or more disconnected trees ), find the root of largest tree
         and return its Id. If there are multiple such roots, return the smallest Id of them.
@@ -49,30 +49,32 @@ public class LongestTree {
         Map<Integer, Integer> vertexCount = new HashMap<>();
 
         for (Map.Entry<Integer, Integer> es : immediateParent.entrySet()) {
-            if (trees.containsKey(es.getValue())) {
-                trees.get(es.getValue()).add(es.getKey());
-            } else {
-                final ArrayList<Integer> arr = new ArrayList<>();
-                arr.add(es.getKey());
-                trees.put(es.getValue(), arr);
-            }
+            trees.putIfAbsent(es.getValue(), new ArrayList<>());
+            trees.get(es.getValue()).add(es.getKey());
 
             if (!immediateParent.containsKey(es.getValue())) {
                 vertexCount.put(es.getValue(), 0);
             }
         }
-
+        int maxLen = Integer.MIN_VALUE;
         for (Map.Entry<Integer, Integer> es : vertexCount.entrySet()) {
-            vertexCount.put(es.getKey(), es.getValue() + DFS(es.getKey(), trees));
+            int len = DFS(es.getKey(), trees);
+            if(len > maxLen) {
+                maxLen = len;
+            }
+            vertexCount.put(es.getKey(), len);
         }
-
+        int rootId = -1;
         for (Map.Entry<Integer, Integer> es : vertexCount.entrySet()) {
+            if (maxLen == es.getValue() && rootId < es.getKey()) {
+                rootId = es.getKey();
+            }
             System.out.println("Parent : " + es.getKey() + " Value : " + es.getValue());
         }
-
-        for (Map.Entry<Integer, ArrayList<Integer>> es : trees.entrySet()) {
+        System.out.println("root id : " + rootId);
+        /*for (Map.Entry<Integer, ArrayList<Integer>> es : trees.entrySet()) {
             System.out.println("Parent : " + es.getKey() + " Value : " + es.getValue());
-        }
+        }*/
     }
 
     private static Integer DFS(Integer root, Map<Integer, ArrayList<Integer>> trees) {

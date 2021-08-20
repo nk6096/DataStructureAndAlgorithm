@@ -1,4 +1,4 @@
-package com.example.demo.gs.array;
+package com.example.demo.prc.array;
 /*Problem Statement:
         Find the median of the two sorted arrays
 

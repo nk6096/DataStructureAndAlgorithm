@@ -1,4 +1,4 @@
-package com.example.demo.gs.dp;
+package com.example.demo.prc.dp;
 /*Problem Statement:
         You are an avid rock collector who lives in southern California. Some rare
         and desirable rocks just became available in New York, so you are planning
@@ -32,10 +32,48 @@ public static Integer optimalPath(Integer[][] grid) {
         {2, 0, 0, 0, 0}};
         Output: 10*/
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 public class OptimalPath {
+    static class Employee {
+        private String name;
+        private Integer salary;
+        Employee(String name, Integer salary) {
+            this.name = name;
+            this.salary = salary;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public Integer getSalary() {
+            return salary;
+        }
+
+        public void setSalary(Integer salary) {
+            this.salary = salary;
+        }
+
+        @Override
+        public String toString() {
+            return "Employee{" +
+                    "name='" + name + '\'' +
+                    ", salary=" + salary +
+                    '}';
+        }
+    }
+
     public static void main(String[] args) {
-        final Integer[][] grid = new Integer[][]{{0, 0, 0, 0, 5}, {0, 1, 1, 1, 0}, {2, 0, 0, 0, 0}};
-        System.out.print(optimalPath(grid));
+        final Integer[][] grid = new Integer[][]{{}};
+        System.out.println(optimalPath(grid));
     }
 
     public static Integer optimalPath(Integer[][] grid) {
@@ -48,6 +86,11 @@ public class OptimalPath {
         if (x < 0 || y > m - 1) {
             return 0;
         }
+
+        if (dp[x][y] != 0) {
+            return dp[x][y];
+        }
+
         return dp[x][y] = grid[x][y] +
                 Math.max(getPath(dp, grid, x - 1, y, n, m), getPath(dp, grid, x, y + 1, n, m));
     }

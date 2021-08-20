@@ -1,4 +1,4 @@
-package com.example.demo.gs.math;
+package com.example.demo.prc.math;
 /*Problem Statement-
         Given base and integer exponent, compute value of base raised to the power of exponent.
 

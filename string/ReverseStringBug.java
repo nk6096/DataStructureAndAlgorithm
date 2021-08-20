@@ -1,4 +1,4 @@
-package com.example.demo.gs.string;
+package com.example.demo.prc.string;
 /*Problem Statement :
         Takes String str and returns a new String
         such that the characters are in reversed order.
@@ -14,14 +14,30 @@ package com.example.demo.gs.string;
 
 public class ReverseStringBug {
     public static void main(String[] args) {
-        System.out.println(reverseStr("abcd"));
+        System.out.println(reverseStr("/gH?yZx"));
     }
 
     public static String reverseStr(String str) {
-        StringBuilder ans = new StringBuilder();
-        for (int i = str.length() - 1; i >= 0; i--) {
-            ans.append(str.charAt(i));
+        char[] charArr = str.toCharArray();
+        int l = 0, r = charArr.length - 1;
+
+        while (l < r) {
+            if (Character.isAlphabetic(charArr[l]) && Character.isAlphabetic(charArr[r])) {
+                char temp = charArr[r];
+                charArr[r] = charArr[l];
+                charArr[l] = temp;
+                l++;
+                r--;
+            } else if (Character.isAlphabetic(charArr[l])) {
+                r--;
+            } else if (Character.isAlphabetic(charArr[r])) {
+                l++;
+            } else {
+                l++;
+                r--;
+            }
         }
-        return ans.toString();
+
+        return new String(charArr);
     }
 }
