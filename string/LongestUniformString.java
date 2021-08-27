@@ -1,4 +1,3 @@
-package com.example.demo.prc.string;
 /*Problem Statement-
         This method should return an integer array with two elements that correctly identifies the location of the longest
         uniform substring within the input string. The first element of the array should be the starting index of the longest

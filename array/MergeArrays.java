@@ -1,5 +1,3 @@
-package com.example.demo.prc.array;
-
 import java.util.Arrays;
 
 public class MergeArrays {

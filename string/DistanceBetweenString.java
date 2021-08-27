@@ -1,6 +1,4 @@
-package com.example.demo.prc.string;
-/*
-Problem Statement –
+/*Problem Statement –
         Given two words returns the shortest distance between their two midpoints in number of characters,
           words can appear multiple times in any order and should be case insensitive.
         Signature :

@@ -1,4 +1,3 @@
-package com.example.demo.prc.string;
 /*Problem Statement-
         Given an Apache log file, return IP address(es) which accesses the site most often.
         our log is in this format (Common Log Format). One entry per line.

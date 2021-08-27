@@ -1,4 +1,3 @@
-package com.example.demo.prc.string;
 /*Problem Statement-
         The sentence “The quick brown fox jumps over the lazy dog" contains
         every single letter in the alphabet. Such sentences are called pangrams.

@@ -1,6 +1,4 @@
-package com.example.demo.prc.math;
-/*
-Problem Statement-
+/*Problem Statement-
         Given two arrays of integers, returns the dot product of the arrays.
         Signature:
         long dotProduct( int[] array1, int array2[] ){

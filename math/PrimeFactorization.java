@@ -1,6 +1,4 @@
-package com.example.demo.prc.math;
-/*
-Problem Statement:
+/*Problem Statement:
         Return an array containing prime numbers whose product is x
         Examples:
         primeFactorization( 6 ) == [2,3]

@@ -1,4 +1,3 @@
-package com.example.demo.prc.misc;
 /*Problem Statement:
         You are given an integer array of size N.
         Every element of the array is greater than or equal to 0.

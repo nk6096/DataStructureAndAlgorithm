@@ -1,4 +1,3 @@
-package com.example.demo.prc.dp;
 /*Problem Statement:
         You are an avid rock collector who lives in southern California. Some rare
         and desirable rocks just became available in New York, so you are planning

@@ -1,4 +1,3 @@
-package com.example.demo.prc.string;
 /*Problem Statement –
         Finds the first character that does not repeat anywhere in the input string
         If all characters are repeated, return 0

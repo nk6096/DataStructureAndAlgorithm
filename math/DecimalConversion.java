@@ -1,4 +1,3 @@
-package com.example.demo.prc.math;
 /*Problem Statement:
         Implement the method that provided numerator and denominator will return a string representing fraction's decimal form.
         Some fractions in decimal form have cyclic decimal points.

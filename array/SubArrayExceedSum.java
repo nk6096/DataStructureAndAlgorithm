@@ -1,4 +1,3 @@
-package com.example.demo.prc.array;
 /*Problem Statement:
         Your task is ultimately to implement a function that takes in an array and a integer.
         You want to return the *LENGTH* of the shortest subarray whose sum is at least the integer,

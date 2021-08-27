@@ -1,4 +1,3 @@
-package com.example.demo.prc.string;
 /*Problem Statement:
         Given a list of words, group them by anagrams
         Input: List of "cat", "dog", "god"

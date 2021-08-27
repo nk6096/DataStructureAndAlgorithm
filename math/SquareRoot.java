@@ -1,4 +1,3 @@
-package com.example.demo.prc.math;
 /*Problem Statement-
         Returns square root of the given double
         Signature:

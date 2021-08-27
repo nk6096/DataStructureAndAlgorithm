@@ -1,5 +1,3 @@
-package com.example.demo.prc.string;
-
 public class PossiblePalindrome {
     public static void main(String[] args) {
         System.out.println(checkPossiblePalindrome("abebea"));

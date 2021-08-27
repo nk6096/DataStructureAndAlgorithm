@@ -1,6 +1,4 @@
-package com.example.demo.prc.math;
-/*
-Problem Statement-
+/*Problem Statement-
         Returns true if x is a power-of-10. Otherwise returns false.
         Signature:
         bool isPowerOf10(int x){

@@ -1,4 +1,3 @@
-package com.example.demo.prc.string;
 /*Problem Statement :
         Takes String str and returns a new String
         such that the characters are in reversed order.

@@ -1,4 +1,3 @@
-package com.example.demo.prc.tree;
 /*Problem statement:
         Given a forest ( one or more disconnected trees ), find the root of largest tree
         and return its Id. If there are multiple such roots, return the smallest Id of them.

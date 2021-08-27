@@ -1,4 +1,3 @@
-package com.example.demo.prc.math;
 /*Problem Statement-
         Given two fractions passed in as int arrays,
         returns the fraction which is result of adding the two input fractions

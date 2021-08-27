@@ -1,4 +1,3 @@
-package com.example.demo.prc.numbers;
 /*Problem Statement-
         Returns second smallest element in array x. If x has fewer than 2 elements returns 0.
 

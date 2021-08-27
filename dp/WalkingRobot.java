@@ -1,4 +1,3 @@
-package com.example.demo.prc.dp;
 /*Problem Statement:
         Implement the ‘walk" method. This method takes in a string, path,
         where each character in the string corresponds to a potential movement

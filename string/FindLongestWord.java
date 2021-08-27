@@ -1,4 +1,3 @@
-package com.example.demo.prc.string;
 /*Problem Statement-
         Given a string of letters and a dictionary, the function longestWord should
         find the longest word or words in the dictionary that can be made from the letters

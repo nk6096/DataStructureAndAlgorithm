@@ -1,6 +1,4 @@
-package com.example.demo.prc.dp;
-/*
-Problem Statement:
+/*Problem Statement:
         shortestPath(self, fromStationName, toStationName)
         method to find shortest path between 2 stations
 

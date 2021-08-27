@@ -1,4 +1,3 @@
-package com.example.demo.prc.dp;
 /*Problem Statement:
         There is a staircase with ‘n' number of steps. A child
         walks by and wants to climb up the stairs, starting at

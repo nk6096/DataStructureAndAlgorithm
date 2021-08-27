@@ -1,4 +1,3 @@
-package com.example.demo.prc.dp;
 /*Problem Statement:
         A group of student are sitting in a circle. The teacher is electing a new class president.
         The teacher does this by singing a song while walking around the circle. After the song is finished the student
